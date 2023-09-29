@@ -11,7 +11,7 @@ version = '0.0.1-SNAPSHOT'
 
 // Java 버전 설정
 java {
-	sourceCompatibility = '11' // 소스 코드 호환 Java 버전 11 설정
+	sourceCompatibility = '11' // Spring Boot 2.x.x 이하 버전만 가능, 3.x.x 이상은 Java 17부터 지원
 }
 
 // 의존성 해결을 위한 저장소 지정
