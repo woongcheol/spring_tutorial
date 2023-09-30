@@ -23,6 +23,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // Thymeleaf 템플릿 엔진과 함께 Spring Boot 사용을 위한 Starter 패키지 의존성 추가
 	implementation 'org.springframework.boot:spring-boot-starter-web' // 웹 애플리케이션 개발 Starter 패키지 의존성 추가 (내장 Tomcat, Spring MVC 등 포함)
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc' // JDBC(Java Database Connectivity) 추가, 데이터베이스 연결, 트랜잭션 관리, JdbcTemplate 등의 기능 사용
+	runtimeOnly 'com.h2database:h2' // H2 DB 런타임 의존성 추가, 테스트용 DB
 	testImplementation 'org.springframework.boot:spring-boot-starter-test' // 스프링 부트 애플리케이션 테스트에 필요한 Starter 패키지 의존성 추가 (예: JUnit)
 }
 
